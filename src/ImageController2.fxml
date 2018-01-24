@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@CounterfortDesign.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="thicknessOfStemTopLabel" layoutX="364.0" layoutY="23.0" text="Label" />
+        <Label fx:id="secondaryBarStemExposedLabel" layoutX="85.0" layoutY="201.0" text="Label" />
+        <Label fx:id="mainSteelStemCurtailmentLabelStem" layoutX="11.0" layoutY="242.0" text="Main Steel Curtailment Table of Stem" />
+        <Label fx:id="dFLabel" contentDisplay="RIGHT" layoutX="111.0" layoutY="502.0" text="Label" />
+        <Label fx:id="secondaryBarToeLabel" layoutX="4.0" layoutY="527.0" text="Label" />
+        <Label fx:id="mainBarToeLabel" layoutX="3.0" layoutY="584.0" text="Label" />
+        <Label fx:id="lengthOfToeLabel" layoutX="280.0" layoutY="609.0" text="Label" />
+        <Label fx:id="thicknessOfStemBotLabel" layoutX="386.0" layoutY="608.0" text="Label" />
+        <Label fx:id="lengthOfHeelLabel" layoutX="522.0" layoutY="610.0" text="Label" />
+        <Label fx:id="heightOfHeelSlabLabel" layoutX="706.0" layoutY="537.0" text="Label" />
+        <Label fx:id="mainBarHeelLabel" layoutX="5.0" layoutY="464.0" text="Label" />
+        <Label fx:id="secondaryBarHeelLabel" layoutX="5.0" layoutY="484.0" text="Label" />
+        <Label fx:id="h2Label" layoutX="706.0" layoutY="327.0" text="Label" />
+      <Label fx:id="mainSteelStemCurtailmentLabelStem1" layoutX="590.0" layoutY="210.0" text="Main Steel Curtailment Table of Counterfort" />
+      <Label fx:id="mainSteelStemCurtailmentLabelStem11" layoutX="591.0" layoutY="280.0" text="Sec. Steel Curtailment Table of Counterfort" />
+      <Label fx:id="thicknessOfStemTopLabel1" layoutX="428.0" layoutY="23.0" text="Label" />
+      <Label fx:id="stirrupsSteelCountefortLabel" layoutX="618.0" layoutY="307.0" text="Label" />
+      <Label fx:id="heightOfToeSlabLabel" layoutX="153.0" layoutY="538.0" text="Label" />
+      <Label fx:id="lDLabel" layoutX="260.0" layoutY="539.0" text="Label" />
+      <Label layoutX="226.0" layoutY="539.0" text="Ld  =" />
+      <Label layoutX="31.0" layoutY="32.0" text="Dia of Main Bar :" />
+      <Label layoutX="31.0" layoutY="61.0" text="Dia of Secondary Bar :" />
+      <Label fx:id="diaOfMainBarLabel" layoutX="195.0" layoutY="32.0" text="Label" />
+      <Label fx:id="diaOfSecondaryBarLabel" layoutX="195.0" layoutY="61.0" text="Label" />
+      <Label fx:id="cm1Label" layoutX="226.0" layoutY="32.0" text="Label" />
+      <Label fx:id="cm2Label" layoutX="226.0" layoutY="61.0" text="Label" />
+      <Label fx:id="cm4Label" layoutX="459.0" layoutY="23.0" text="Label" />
+      <Label fx:id="cm3Label" layoutX="394.0" layoutY="23.0" text="Label" />
+      <Label fx:id="cm5Label" layoutX="396.0" layoutY="621.0" text="Label" />
+      <Label fx:id="cm6Label" layoutX="291.0" layoutY="539.0" text="Label" />
+      <Label fx:id="m1Label" layoutX="736.0" layoutY="327.0" text="Label" />
+      <Label fx:id="m2Label" layoutX="736.0" layoutY="537.0" text="Label" />
+      <Label fx:id="m3Label" layoutX="532.0" layoutY="621.0" text="Label" />
+      <Label fx:id="m4Label" layoutX="287.0" layoutY="622.0" text="Label" />
+      <Label fx:id="m6Label" layoutX="162.0" layoutY="556.0" text="Label" />
+      <Label fx:id="m5Label" layoutX="119.0" layoutY="515.0" text="Label" />
+    </children>
+</AnchorPane>

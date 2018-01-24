@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <content>
+      <StackPane depthTest="ENABLE" minHeight="-Infinity" minWidth="-Infinity">
+         <children>
+            <AnchorPane fx:id="anchorPane2" depthTest="ENABLE" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1024.0" style="-fx-background-color: #FFFFFF;" translateZ="1.0">
+               <children>
+                  <VBox spacing="15.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+                     <children>
+                        <Label text="BASIC INPUTS" textFill="#1b1919">
+                           <font>
+                              <Font name="Berlin Sans FB" size="20.0" />
+                           </font>
+                        </Label>
+                        <HBox spacing="20.0">
+                           <children>
+                              <VBox spacing="29.0">
+                                 <children>
+                                    <Label minWidth="-Infinity" text="Height of wall above ground (m or ft)" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Friction Angle of Backfill (degree)" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Bearing Capacity (KN/m2 or Kip/ft2)" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Surcharge Density (KN/m3 or lb/ft3)" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Density of Backfill Soil (KN/m3 or lb/ft3)" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Coefficient of Friction" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Density of Concrete (KN/m3 or lb/ft3)" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Slope Angle (degree)" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="321.0" text="Horizontal E.Q Accelration (m/s2 or ft/s2)" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox spacing="20.0">
+                                 <children>
+                                    <TextField fx:id="tfHeightOfWallAboveGround" minWidth="-Infinity" />
+                                    <TextField fx:id="tFFrictionAngle" />
+                                    <TextField fx:id="tFBearingCapacity" />
+                                    <TextField fx:id="tFSurchargeDensity" />
+                                    <TextField fx:id="tFSoilDensity" />
+                                    <TextField fx:id="tFCoefficientOfFriction" />
+                                    <TextField fx:id="tFDensityOfConcrete" />
+                                    <TextField fx:id="tFSlopeAngle" />
+                                    <TextField fx:id="tfah" layoutX="10.0" layoutY="325.0" />
+                                 </children>
+                              </VBox>
+                              <VBox spacing="29.0">
+                                 <children>
+                                    <Label text="Surcharge Load (KN/m2 or lb/ft2)" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Surcharge Height (m or ft)" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label minWidth="-Infinity" text="Surcharge Distance from Wall (m or ft)" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Tensile Stress of Steel (kg/cm2)" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Diameter of Main Rebar (cm or in)" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label minWidth="-Infinity" text="Diameter of Secondary Rebar (cm or in)" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Grade of Concrete" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="No of Rows of Rebars" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="325.0" text="Vertical E.Q Accelration (m/s2 or ft/s2)" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox spacing="20.0">
+                                 <children>
+                                    <TextField fx:id="tFSurchargeLoad" />
+                                    <TextField fx:id="tFSurchargeHeight" />
+                                    <TextField fx:id="tFSurchargeDistanceFromWall" />
+                                    <TextField fx:id="tFTensileStressOfSteel" />
+                                    <TextField fx:id="tFDiaOfMainRebar" />
+                                    <TextField fx:id="tFDiaOfSecondaryRebar" />
+                                    <ComboBox fx:id="comboBoxGradeOfSteel" prefWidth="150.0" />
+                                    <TextField fx:id="tFNoOfRowsOfRebars" />
+                                    <TextField fx:id="tfav" layoutX="10.0" layoutY="325.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox spacing="273.0">
+                           <children>
+                              <Label text="ADVANCED INPUTS*" textFill="#1b1919">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Label>
+                              <CheckBox fx:id="advancedInputsCheckBox" mnemonicParsing="false" onAction="#handleAdvancedInputsCheckBox" />
+                           </children>
+                        </HBox>
+                        <HBox spacing="20.0">
+                           <children>
+                              <VBox spacing="25.0">
+                                 <children>
+                                    <Label text="Thickness of Stem at Bottom (cm or in)" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Thickness of Stem at Top (cm or in)" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Length of Base (m or ft)" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox spacing="20.0">
+                                 <children>
+                                    <TextField fx:id="tfThicknessOfStem_Bottom" disable="true" />
+                                    <TextField fx:id="tfThicknessOfStem_Top" disable="true" />
+                                    <TextField fx:id="tfLengthOfBase" disable="true" />
+                                 </children>
+                              </VBox>
+                              <VBox minWidth="-Infinity" prefWidth="246.0" spacing="25.0">
+                                 <children>
+                                    <Label text="Height of Toe Slab (m or ft)" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Height of Heel Slab (m or ft)" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Lateral Earth Pressure (Kn/m or lb/ft)" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox spacing="20.0">
+                                 <children>
+                                    <TextField fx:id="tfHeightOfToeSlab" disable="true" />
+                                    <TextField fx:id="tfHeightOfHeelSlab" disable="true" />
+                                    <TextField fx:id="tfLateralEarthPressre" disable="true" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox spacing="145.0">
+                           <children>
+                              <Label text="* Every text field in advanced inputs is optional" textFill="#b92f2f">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="lateralEarthPressureButton" disable="true" mnemonicParsing="false" onAction="#lateralEarthPressureCaller" text="Lateral Earth Pressure Calculator" textFill="#2600e4">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <Label fx:id="errorLabel2" textFill="RED">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox layoutX="483.0" layoutY="561.0" spacing="20.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#backOfPage2Action" prefWidth="80.0" text="Back" textFill="#b92f2f">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="nextButton2" defaultButton="true" mnemonicParsing="false" onAction="#nextPage2Action" prefWidth="80.0" text="Next" textFill="#b92f2f">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                           </font></Button>
+                        <Button disable="true" mnemonicParsing="false" prefWidth="80.0" text="Finish" textFill="#b92f2f">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                           </font></Button>
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="500.0" fitWidth="350.0" layoutX="849.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@IntroWall.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="anchorPane3" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" translateZ="2.0">
+               <children>
+                  <HBox layoutX="50.0" layoutY="20.0">
+                     <children>
+                        <VBox spacing="20.0">
+                           <children>
+                              <VBox>
+                                 <children>
+                                    <Label text="STEM" textFill="#1b1919">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox spacing="10.0">
+                                       <children>
+                                          <VBox prefWidth="320.0" spacing="5.0">
+                                             <children>
+                                                <Label text="Depth of Foundation(m or ft)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Thickness of Stem at bottom (cm or in)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Thickness of Stem at top (cm or in)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Area of secondary steel (Earth Face)(cm2 or in2)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Spacing of secondary steel (Earth Face)(cm or in)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="No of Secondary Bars (Earth Face)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Area of secondary steel (Exposed Face)(cm2 or in2)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Spacing of secondary steel (Exposed Face)(cm or in)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="No of Secondary Bars (Exposed Face)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Button fx:id="stemSteelButton" mnemonicParsing="false" onAction="#stemSteelButtonController" text="Main Steel Curtailment" textFill="BLUE">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets top="10.0" />
+                                                   </VBox.margin></Button>
+                                             </children>
+                                          </VBox>
+                                          <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="150.0" spacing="5.0">
+                                             <children>
+                                                <Label fx:id="dFLabel" textFill="#b92f2f" />
+                                                <Label fx:id="thicknessOfStem_bottomLabel" textFill="#b92f2f" />
+                                                <Label fx:id="thicknessOfStem_topLabel" textFill="#b92f2f" />
+                                                <Label fx:id="areaOfSecondarySteelEarthFaceLabel" textFill="#b92f2f" />
+                                                <Label fx:id="spacingOfSecondarySteelEarthFaceLabel" textFill="#b92f2f" />
+                                                <Label fx:id="noOfSecondaryBarsEarthFaceLabel" textFill="#b92f2f" />
+                                                <Label fx:id="areaOfSecondarySteelExposedFaceLabel" textFill="#b92f2f" />
+                                                <Label fx:id="spacingOfSecondarySteelExposedFaceLabel" textFill="#b92f2f" />
+                                                <Label fx:id="noOfSecondaryBarsExposedFaceLabel" textFill="#b92f2f" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox>
+                                 <children>
+                                    <Label text="TOE" textFill="#1b1919">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox spacing="10.0">
+                                       <children>
+                                          <VBox prefWidth="320.0" spacing="5.0">
+                                             <children>
+                                                <Label text="Length of base (m or ft)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Height of Toe slab (m or ft)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Length of Toe slab (m or ft)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="*Effective depth of Toe (cm or in)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Area of main steel (cm2 or in2)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Spacing of main steel (cm or in)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="No of Main Bars" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Area of secondary steel (cm2 in2)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Spacing of secondary steel (cm or in)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="No of Secondary Bars" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="150.0" spacing="8.0">
+                                             <children>
+                                                <Label fx:id="lengthOfBaseLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="heightOfToeLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="lengthOfToeLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="eDepthOfToeLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="areaOfMainSteelForToeLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="spacingOfMainSteelForToeLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="noOfMainBarsOfToeLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="areaOfSecondarySteelForToeLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="spacingOfSecondarySteelForToeLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="noOfSecondaryBarsOfToeLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <VBox spacing="20.0">
+                           <children>
+                              <VBox>
+                                 <children>
+                                    <Label text="HEEL" textFill="#1b1919">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox spacing="10.0">
+                                       <children>
+                                          <VBox prefWidth="230.0" spacing="5.0">
+                                             <children>
+                                                <Label text="*Effective depth of Heel (cm or in)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Length of Heel (m or ft)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Area of main steel (cm2 or in2)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Spacing of main steel (cm or in)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="No of Main Bar" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Area of secondary steel (cm2 or in2)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Spacing of secondary steel (cm or in)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="No of Secondary Bars" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefWidth="150.0" spacing="8.0">
+                                             <children>
+                                                <Label fx:id="eDepth_HeelLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="lengthOfHeelLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="areaOfMainSteelForHeelLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="spacingOfMainSteelForHeelLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="noOfMainBarsOfHeelLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="areaOfSecondarySteelForHeelLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="spacingOfSecondarySteelForHeelLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="noOfSecondaryBarsOfHeelLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox>
+                                 <children>
+                                    <Label text="KEY" textFill="#1b1919">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox spacing="10.0">
+                                       <children>
+                                          <VBox prefWidth="230.0" spacing="5.0">
+                                             <children>
+                                                <Label text="Depth of Key (m or ft)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Effective width of Key (cm or in)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Area of main steel (cm2 or in2)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Spacing of main steel (cm or in)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="No of Main Bars" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Area of secondary steel (cm2 in2)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Spacing of secondary steel (cm or in)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="No of Secondary Bars" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefWidth="150.0" spacing="8.0">
+                                             <children>
+                                                <Label fx:id="depthOfKeyLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="widthOfKeyLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="areaOfMainSteelForKeyLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="spacingOfMainSteelForKeyLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="noOfMainBarsOfKeyLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="areaOfSecondarySteelForKeyLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="spacingOfSecondarySteelForKeyLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="noOfSecondaryBarsOfKeyLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <ImageView fitHeight="250.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@PressureUnderBase.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox spacing="20.0">
+                           <children>
+                              <VBox>
+                                 <children>
+                                    <Label text="COUNTERFORT" textFill="#1b1919">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox spacing="10.0">
+                                       <children>
+                                          <VBox spacing="5.0">
+                                             <children>
+                                                <Label text="Spacing of Counterforts (m or ft)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="**Effective depth of Counterfort (cm or in)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Width of Counterfort (cm or in)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Area of steel for stirrups (cm2 or in2)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Spacing of steel for stirrups (cm or in)" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="No of Double Legged Stirrups" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Button fx:id="mainSteelCounterfortButton" mnemonicParsing="false" onAction="#mainSteelOfCounterfortButtonController" text="Main Steel Curtailment" textFill="BLUE">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets top="10.0" />
+                                                   </VBox.margin></Button>
+                                                <Button fx:id="secondarySteelCounterfortButton" mnemonicParsing="false" onAction="#secondarySteelOfCounterfortButtonController" text="Secondary Steel Curtailment" textFill="BLUE">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="14.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets top="10.0" />
+                                                   </VBox.margin></Button>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefWidth="150.0" spacing="8.0">
+                                             <children>
+                                                <Label fx:id="spacingOfCounterfortLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="eDepthOfCounterfortLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="widthOfCounterfortLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="areaOfSteelForStirrupsLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="spacingOfSteelForStirrupsLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                                <Label fx:id="noOfDoubleLeggedStirrupsLabel" textFill="#b92f2f">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="12.0" />
+                                                   </font></Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox spacing="5.0">
+                                 <children>
+                                    <Label text="FACTOR OF SAFETY" textFill="#1b1919">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="eccentricityCheckLabel" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="overturningFailureCheckLabel" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="slidingFailureCheckLabel" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="shearCheckHeel_WallLabel" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font></Label>
+                                    <Label fx:id="shearCheck_Wall_ToeLab" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="shearCheckLabel" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="maxPressureUnderBaseLabel" textFill="#b92f2f">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font></Label>
+                                 </children>
+                              </VBox>
+                              <ImageView fitHeight="200.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Eccentricity.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="711.0" layoutY="661.0" spacing="20.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                     <children>
+                        <Button fx:id="imageButton" mnemonicParsing="false" onAction="#imageController" text="View Image" textFill="#b92f2f">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="calculateButton" mnemonicParsing="false" onAction="#calculateAction" prefWidth="80.0" text="Calculate" textFill="#b92f2f">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="excelFileButtonId" mnemonicParsing="false" onAction="#excelFileGenerator" prefWidth="80.0" text="Excel File" textFill="#b92f2f">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="backButtonPage3" mnemonicParsing="false" onAction="#backOfPage3Action" prefWidth="80.0" text="Back" textFill="#b92f2f">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="finishButton" mnemonicParsing="false" onAction="#finishButtonController" prefWidth="80.0" text="Finish" textFill="#b92f2f">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                           </font></Button>
+                     </children>
+                  </HBox>
+                  <Label layoutX="50.0" layoutY="659.0" text="* Cover = 7.5 cm (3 in)        ** Cover = 10 cm (4 in)" textFill="#b92f2f">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="pressureUnderToeLabel" layoutX="502.0" layoutY="616.0" textFill="#b92f2f" />
+                  <Label fx:id="pressureUnderHeelLabel" layoutX="724.0" layoutY="614.0" textFill="#b92f2f" />
+                  <Label layoutX="536.0" layoutY="652.0" text="Pressure Distribution Under Base" textFill="#1b1919">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="eccentricityLabel" layoutX="983.0" layoutY="636.0" textFill="#b92f2f" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="anchorPane1" depthTest="ENABLE" style="-fx-background-color: #ffffff;">
+               <children>
+                  <VBox layoutX="19.0" layoutY="20.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="20.0">
+                     <children>
+                        <Label fx:id="label1" text="TYPE OF WALL" textFill="#232325">
+                           <font>
+                              <Font name="Berlin Sans FB" size="20.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" spacing="100.0">
+                           <children>
+                              <VBox spacing="15.0">
+                                 <children>
+                                    <RadioButton fx:id="wall1" mnemonicParsing="false" onAction="#showTrackLoading" text="CantileverWall" textFill="#b92f2f">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="wallToggleGroup" />
+                                       </toggleGroup>
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </RadioButton>
+                                    <Label>
+                                       <graphic>
+                                          <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@Cantiliverwall.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox spacing="15.0">
+                                 <children>
+                                    <RadioButton fx:id="wall2" mnemonicParsing="false" onAction="#hideTrackLoading" text="CounterfortWall" textFill="#b92f2f" toggleGroup="$wallToggleGroup">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font></RadioButton>
+                                    <Label>
+                                       <graphic>
+                                          <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@Counterfort%20retaining%20walls.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox spacing="15.0">
+                                 <children>
+                                    <RadioButton fx:id="wall3" mnemonicParsing="false" onAction="#showTrackLoading" text="L-ShapeWall" textFill="#b92f2f" toggleGroup="$wallToggleGroup">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font></RadioButton>
+                                    <Label>
+                                       <graphic>
+                                          <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@L%20shapeWall1.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Label text="LOADING TYPE" textFill="#232325">
+                           <font>
+                              <Font name="Berlin Sans FB" size="20.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" spacing="50.0">
+                           <children>
+                              <VBox spacing="10.0">
+                                 <children>
+                                    <RadioButton fx:id="loading1" mnemonicParsing="false" onAction="#horizontalSurchargeSelectionAction" text="Horizontal Surcharge" textFill="#b92f2f">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="loadingToggleGroup" />
+                                       </toggleGroup>
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font>
+                                    </RadioButton>
+                                    <Label>
+                                       <graphic>
+                                          <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@Horizontal%20Surcharge.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox spacing="5.0">
+                                 <children>
+                                    <RadioButton fx:id="loading2" mnemonicParsing="false" onAction="#slopingSurchargeSelectionAction" text="Sloping Surcharge" textFill="#b92f2f" toggleGroup="$loadingToggleGroup">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font></RadioButton>
+                                    <Label>
+                                       <graphic>
+                                          <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@SLOPINGsurcharge.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox spacing="12.0">
+                                 <children>
+                                    <RadioButton fx:id="loading3" mnemonicParsing="false" onAction="#superImposedLoadingSelectionAction" text="Superimposed Loading" textFill="#b92f2f" toggleGroup="$loadingToggleGroup">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font></RadioButton>
+                                    <Label>
+                                       <graphic>
+                                          <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@Superimposed%20Loading.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox spacing="10.0">
+                                 <children>
+                                    <RadioButton fx:id="loading4" mnemonicParsing="false" onAction="#trackLoadingSelectionAction" text="Track Loading" textFill="#b92f2f" toggleGroup="$loadingToggleGroup">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="14.0" />
+                                       </font></RadioButton>
+                                    <Label>
+                                       <graphic>
+                                          <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@Track%20Loading.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Label text="UNIT SYSTEM" textFill="#232325">
+                           <font>
+                              <Font name="Berlin Sans FB" size="20.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+                           <children>
+                              <RadioButton fx:id="unit1" mnemonicParsing="false" selected="true" text="SI" textFill="#b92f2f">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="unitToggleGroup" />
+                                 </toggleGroup>
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="14.0" />
+                                 </font>
+                              </RadioButton>
+                              <RadioButton fx:id="unit2" mnemonicParsing="false" text="FPS" textFill="#b92f2f" toggleGroup="$unitToggleGroup">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="14.0" />
+                                 </font></RadioButton>
+                           </children>
+                        </HBox>
+                        <Label text="SEISMIC ANALYSIS" textFill="#232325">
+                           <font>
+                              <Font name="Berlin Sans FB" size="20.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" spacing="50.0">
+                           <children>
+                              <Label text="Yes" textFill="#b92f2f">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="14.0" />
+                                 </font></Label>
+                              <CheckBox fx:id="seismicYesBox" mnemonicParsing="false" onAction="#handleYesBox" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="555.0" spacing="50.0">
+                           <children>
+                              <Label text="No" textFill="#b92f2f">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="14.0" />
+                                 </font></Label>
+                              <CheckBox fx:id="seismicNoBox" mnemonicParsing="false" onAction="#handleNoBox" />
+                           </children>
+                        </HBox>
+                        <Label fx:id="errorLabel1" textFill="RED">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox spacing="20.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                     <children>
+                        <Button disable="true" mnemonicParsing="false" prefWidth="80.0" text="Back" textFill="#b92f2f">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="nextButton" defaultButton="true" mnemonicParsing="false" onAction="#nextPage1Action" prefWidth="80.0" text="Next" textFill="#b92f2f">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                           </font></Button>
+                        <Button disable="true" mnemonicParsing="false" prefWidth="80.0" text="Finish" textFill="#b92f2f">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                           </font></Button>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </content>
+</ScrollPane>

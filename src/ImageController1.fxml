@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@CantiliverDesignwall.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="thicknessOfStemTopCantiliverLabel" layoutX="367.0" layoutY="6.0" text="Label" />
+      <Label fx:id="secondaryBarStemExposedCantiliverLabel" layoutX="50.0" layoutY="133.0" text="Label" />
+      <Label fx:id="mainSteelStemCurtailmentLabelStem" layoutX="6.0" layoutY="246.0" text="Main Steel Curtailment Table of Stem" />
+      <Label fx:id="dFCantiliverLabel" contentDisplay="RIGHT" layoutX="78.0" layoutY="472.0" text="Label" />
+      <Label fx:id="secondaryBarToeCantiliverLabel" layoutX="2.0" layoutY="507.0" text="Label" />
+      <Label fx:id="secondaryBarStemEarthCantiliverLabel" layoutX="537.0" layoutY="253.0" text="Label" />
+      <Label fx:id="mainBarToeCantiliverLabel" layoutX="1.0" layoutY="564.0" text="Label" />
+      <Label fx:id="lengthOfToeCantiliverLabel" layoutX="235.0" layoutY="645.0" text="Label" />
+      <Label fx:id="widthOfKeyLabel" layoutX="363.0" layoutY="644.0" text="Label" />
+      <Label fx:id="lengthOfHeelCantiliverLabel" layoutX="502.0" layoutY="644.0" text="Label" />
+      <Label fx:id="heightOfHeelSlabCantiliverLabel" layoutX="684.0" layoutY="513.0" text="Label" />
+      <Label fx:id="mainBarHeelCantiliverLabel" layoutX="568.0" layoutY="393.0" text="Label" />
+      <Label fx:id="secondaryBarHeelCantiliverLabel" layoutX="538.0" layoutY="328.0" text="Label" />
+      <Label fx:id="h2CantiliverLabel" layoutX="684.0" layoutY="288.0" text="Label" />
+      <Label fx:id="depthOfKeyLabel" layoutX="684.0" layoutY="577.0" text="Label" />
+      <Label fx:id="secondarySteelForKeyLabel" layoutX="554.0" layoutY="569.0" text="Label" />
+      <Label fx:id="mainSteelKeyLabel" layoutX="554.0" layoutY="594.0" text="Label" />
+      <Label fx:id="thicknessOfStemBotCantiliverLabel" layoutX="367.0" layoutY="465.0" text="Label" />
+      <Label fx:id="heightOfToeSlabCantiliverLabel" layoutX="117.0" layoutY="517.0" text="Label" />
+      <Label layoutX="488.0" layoutY="513.0" text="Ld  =" />
+      <Label fx:id="lDLabel" layoutX="524.0" layoutY="513.0" text="Label" />
+      <Label layoutX="29.0" layoutY="33.0" text="Dia of Main Bar :" />
+      <Label layoutX="29.0" layoutY="67.0" text="Dia of Secondary Bar:" />
+      <Label fx:id="diaOfMainBarLabel" layoutX="156.0" layoutY="33.0" text="Label" />
+      <Label fx:id="diaOfSecondaryBarLabel" layoutX="156.0" layoutY="67.0" text="Label" />
+      <Label fx:id="cm1Label" layoutX="190.0" layoutY="33.0" text="Label" />
+      <Label fx:id="cm2Label" layoutX="190.0" layoutY="67.0" text="Label" />
+      <Label fx:id="cm3Label" layoutX="399.0" layoutY="6.0" text="Label" />
+      <Label fx:id="cm4Label" layoutX="375.0" layoutY="477.0" text="Label" />
+      <Label fx:id="cm5Label" layoutX="558.0" layoutY="513.0" text="Label" />
+      <Label fx:id="m1Label" layoutX="715.0" layoutY="288.0" text="Label" />
+      <Label fx:id="m2Label" layoutX="715.0" layoutY="513.0" text="Label" />
+      <Label fx:id="m3Label" layoutX="715.0" layoutY="578.0" text="Label" />
+      <Label fx:id="m4Label" layoutX="509.0" layoutY="659.0" text="Label" />
+      <Label fx:id="cm6Label" layoutX="371.0" layoutY="659.0" text="Label" />
+      <Label fx:id="m6Label" layoutX="243.0" layoutY="659.0" text="Label" />
+      <Label fx:id="m7Label" layoutX="124.0" layoutY="531.0" text="Label" />
+      <Label fx:id="m8Label" layoutX="86.0" layoutY="489.0" text="Label" />
+   </children>
+</AnchorPane>
