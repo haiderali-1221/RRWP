@@ -37,7 +37,7 @@ This software is developed by a Civil Engineering student of NUST Institute of C
 
 ![Title Page](https://ibb.co/iQJXyb)
 
-![Page 1](https://ibb.co/jZuGPG)
+![Page 1](https://preview.ibb.co/c6NQJb/Page1.png)
 
 ![Page 2](https://ibb.co/iAZGPG)
 
