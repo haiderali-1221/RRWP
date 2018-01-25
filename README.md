@@ -14,27 +14,27 @@ This software is developed by a Civil Engineering student of NUST Institute of C
 * It simulates 3 wall types :
   * Cantilever Wall
   * Counterfort Wall
-  *L-Shape Wall
+  * L-Shape Wall
 * It simulates 4 loading conditions:
-  *Horizontal Surcharge
-  *Sloping Surcharge
-  *Super Imposed Loading
+  * Horizontal Surcharge
+  * Sloping Surcharge
+  * Super Imposed Loading
   *Track Loading
-*It operates in both SI & FPS units.
-*It provides seismic design using Mononobe-Okabe Method.
-*It has built in Literature Hints available for each input field.
-*Advanced Inputs option for modification of design which provides  complete flexibility.
-*Calculates 5 FOS checks :
-  *Overturning check
-  *Sliding check
-  *Eccentricity check
-  *Bearing capacity check
-  *Shear check
-*Provides main steel curtailment table for stem & counterfort to ensure economical use of steel.
-*Image View button which provides complete details of all the dimensions  and  reinforcements through cross sectional view. This image is detailed enough to be used directly for execution of work.
-*It imports an excel file which contains complete details of all the calculations carried out stepwise to design the wall.
-*It calculates Development Length (Ld) using ACI code section 12.2.2
-*_Lateral Earth Pressure Calculator_ is a side tool software of RRWP. It calculates active, passive and rest earth pressure using *Rankine* & *Coulomb* theory. It can simulate any number of strata of soil and saturation condition. It also operates in both SI & FPS unit system. This software is embedded in RRWP.
+* It operates in both SI & FPS units.
+* It provides seismic design using Mononobe-Okabe Method.
+* It has built in Literature Hints available for each input field.
+* Advanced Inputs option for modification of design which provides  complete flexibility.
+* Calculates 5 FOS checks :
+  * Overturning check
+  * Sliding check
+  * Eccentricity check
+  * Bearing capacity check
+  * Shear check
+* Provides main steel curtailment table for stem & counterfort to ensure economical use of steel.
+* Image View button which provides complete details of all the dimensions  and  reinforcements through cross sectional view. This image is detailed enough to be used directly for execution of work.
+* It imports an excel file which contains complete details of all the calculations carried out stepwise to design the wall.
+* It calculates Development Length (Ld) using ACI code section 12.2.2
+* _Lateral Earth Pressure Calculator_ is a side tool software of RRWP. It calculates active, passive and rest earth pressure using *Rankine* & *Coulomb* theory. It can simulate any number of strata of soil and saturation condition. It also operates in both SI & FPS unit system. This software is embedded in RRWP.
 ## Pictures:
 
 ![Title Page](https://image.ibb.co/mbUuBw/wall.png)
