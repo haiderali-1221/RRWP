@@ -5,7 +5,7 @@ This software is developed in JAVA language using “IntelliJ IDEA” IDE. This 
 This software is developed by a Civil Engineering student of NUST Institute of Civil Engineering as final year project. Any kind of constructive feedback or help is appreciated.Feel free to contact me on this email: eng.haiderali@hotmail.com
  ## Awards:
 *This software was awarded _Geotechnical Project of Year_ by Pakistan Geotechnical Engineering Society in 2016 _ICNCGE Conference_.
-![Geotechnical Project of Year Award](https://ibb.co/gSDqJb)
+![Geotechnical Project of Year Award](https://preview.ibb.co/fvcHyb/Geotech_Certificate.jpg)
 *This software was nominated for top 5 groups for _Rectors Gold Medal_ by NUST Institute of Civil Engineering.
 
 ## Features:
@@ -35,19 +35,19 @@ This software is developed by a Civil Engineering student of NUST Institute of C
 *_Lateral Earth Pressure Calculator_ is a side tool software of RRWP. It calculates active, passive and rest earth pressure using *Rankine* & *Coulomb* theory. It can simulate any number of strata of soil and saturation condition. It also operates in both SI & FPS unit system. This software is embedded in RRWP.
 ## Pictures:
 
-![Title Page](https://ibb.co/iQJXyb)
+![Title Page](https://image.ibb.co/mbUuBw/wall.png)
 
 ![Page 1](https://preview.ibb.co/c6NQJb/Page1.png)
 
-![Page 2](https://ibb.co/iAZGPG)
+![Page 2](https://preview.ibb.co/e4eSWw/Page2.png)
 
-![Page 3](https://ibb.co/k0Dzdb)
+![Page 3](https://preview.ibb.co/iCBVjG/Page3.png)
 
-![Page 4](https://ibb.co/h2uuBw)
+![Page 4](https://preview.ibb.co/fEsQJb/Page4.png)
 
-![Page 5](https://ibb.co/g2nQJb)
+![Page 5](https://preview.ibb.co/kGQCyb/Page5.png)
 
-![Page 6](https://ibb.co/iEj5Jb)
+![Page 6](https://preview.ibb.co/mBCEBw/Page6.png)
 
-![Page 7](https://ibb.co/nnhsyb)
+![Page 7](https://preview.ibb.co/k6OMrw/Page7.png)
 
