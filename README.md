@@ -4,16 +4,18 @@ Reinforced Retaining Wall Pro is a Geotechnical Enineering Software for complete
 This software is developed in JAVA language using “IntelliJ IDEA” IDE. This software has a decent interface designed using “JAVA FX” GUI library. A visual layout tool called “Scene Builder” is also used to create the interface of this software.
 This software is developed by a Civil Engineering student of NUST Institute of Civil Engineering as final year project. Any kind of constructive feedback or help is appreciated.Feel free to contact me on this email: eng.haiderali@hotmail.com
  ## Awards:
-*This software was awarded _Geotechnical Project of Year_ by Pakistan Geotechnical Engineering Society in 2016 _ICNCGE Conference_.
+* This software was awarded _Geotechnical Project of Year_ by Pakistan Geotechnical Engineering Society in 2016 _ICNCGE Conference_.
+
 ![Geotechnical Project of Year Award](https://preview.ibb.co/fvcHyb/Geotech_Certificate.jpg)
-*This software was nominated for top 5 groups for _Rectors Gold Medal_ by NUST Institute of Civil Engineering.
+
+* This software was nominated for top 5 groups for _Rectors Gold Medal_ by NUST Institute of Civil Engineering.
 
 ## Features:
-*It simulates 3 wall types :
-  *Cantilever Wall
-  *Counterfort Wall
+* It simulates 3 wall types :
+  * Cantilever Wall
+  * Counterfort Wall
   *L-Shape Wall
-*It simulates 4 loading conditions:
+* It simulates 4 loading conditions:
   *Horizontal Surcharge
   *Sloping Surcharge
   *Super Imposed Loading
